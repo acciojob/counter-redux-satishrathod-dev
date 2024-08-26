@@ -5,18 +5,22 @@ const Counter = () => {
   const counterContext = useContext(CounterContext);
   return (
     <div>
-      <button
-        id="increment-button"
-        onClick={() => counterContext.setCount(counterContext.count + 1)}
-      >
-        Increment
-      </button>
-      <button
-        id="decrement-button"
-        onClick={() => counterContext.setCount(counterContext.count - 1)}
-      >
-        decrease
-      </button>
+      <span>
+        <button
+          id="increment-button"
+          onClick={() => counterContext.setCount(counterContext.count + 1)}
+        >
+          Increment
+        </button>
+      </span>
+      <span>
+        <button
+          id="decrement-button"
+          onClick={() => counterContext.setCount(counterContext.count - 1)}
+        >
+          decrease
+        </button>
+      </span>
     </div>
   );
 };
