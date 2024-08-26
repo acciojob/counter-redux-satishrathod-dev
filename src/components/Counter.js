@@ -5,10 +5,16 @@ const Counter = () => {
   const counterContext = useContext(CounterContext);
   return (
     <div>
-      <button onClick={() => counterContext.setCount(counterContext.count + 1)}>
+      <button
+        id="increment-button"
+        onClick={() => counterContext.setCount(counterContext.count + 1)}
+      >
         Increment
       </button>
-      <button onClick={() => counterContext.setCount(counterContext.count - 1)}>
+      <button
+        id="decrement-button"
+        onClick={() => counterContext.setCount(counterContext.count - 1)}
+      >
         decrease
       </button>
     </div>
