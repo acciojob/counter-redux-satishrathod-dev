@@ -9,7 +9,7 @@ const Counter = () => {
         Increment
       </button>
       <button onClick={() => counterContext.setCount(counterContext.count - 1)}>
-        Decrement
+        decrease
       </button>
     </div>
   );
